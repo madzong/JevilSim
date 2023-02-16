@@ -1,0 +1,17 @@
+E:\C#\JevilSim\bin\Debug\net6.0-windows\JevilSim.exe
+E:\C#\JevilSim\bin\Debug\net6.0-windows\JevilSim.deps.json
+E:\C#\JevilSim\bin\Debug\net6.0-windows\JevilSim.runtimeconfig.json
+E:\C#\JevilSim\bin\Debug\net6.0-windows\JevilSim.dll
+E:\C#\JevilSim\bin\Debug\net6.0-windows\JevilSim.pdb
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.csproj.AssemblyReference.cache
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.Form1.resources
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.csproj.GenerateResource.cache
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.AssemblyInfoInputs.cache
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.AssemblyInfo.cs
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.csproj.CoreCompileInputs.cache
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.dll
+E:\C#\JevilSim\obj\Debug\net6.0-windows\refint\JevilSim.dll
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.pdb
+E:\C#\JevilSim\obj\Debug\net6.0-windows\JevilSim.genruntimeconfig.cache
+E:\C#\JevilSim\obj\Debug\net6.0-windows\ref\JevilSim.dll
