@@ -1,3 +1,5 @@
+Simulators for the Jevil and Spamton NEO bosses from DELTARUNE. This repository contains only the launcher that I have created, but the actual simulator is just modded DELTARUNE. DELTARUNE was created by Toby Fox; I do not claim anything, that has to do with the game.
+
 # Jevil Simulator
 Game modes:
  * Normal - Standard Jevil fight
