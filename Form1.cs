@@ -18,10 +18,6 @@ namespace JevilSim
             {
                 button2.Enabled = true;
             }
-            if (Directory.Exists(".\\SpamtonSim\\"))
-            {
-                button4.Enabled = true;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,34 +32,14 @@ namespace JevilSim
             using (WebClient wc = new WebClient())
             {
                 wc.DownloadProgressChanged += wc_DownloadProgressChanged2;
-                wc.DownloadFileAsync(new Uri("https://www.dropbox.com/s/wxup87njhpvq0re/DELTARUNE.zip?dl=1"), "DELTARUNE.zip");
+                wc.DownloadFileAsync(new Uri("https://www.dropbox.com/s/oy2ioucaz0apowp/JevilSimulator.zip?dl=1"), "JevilSimulator.zip");
                 wc.DownloadFileCompleted += wc_DownloadFileCompleted2;
             }
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            Process.Start(new ProcessStartInfo(Directory.GetCurrentDirectory() + @"\JevilSim\DELTARUNE.exe"));
+            Process.Start(new ProcessStartInfo(Directory.GetCurrentDirectory() + @"\JevilSim\JevilSimulator.exe"));
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            using (WebClient wc = new WebClient())
-            {
-                wc.DownloadProgressChanged += wc_DownloadProgressChanged3;
-                wc.DownloadFileAsync(new Uri("https://www.dropbox.com/s/0ypz388ji96opk8/SpamtonSim.zip?dl=1"), "SpamtonSim.zip");
-                wc.DownloadFileCompleted += wc_DownloadFileCompleted3;
-            }
-            using (WebClient wc = new WebClient())
-            {
-                wc.DownloadProgressChanged += wc_DownloadProgressChanged4;
-                wc.DownloadFileAsync(new Uri("https://www.dropbox.com/s/os8p9o2tblykhd4/SpamtonSexSimulator.zip?dl=1"), "SpamtonSexSimulator.zip");
-                wc.DownloadFileCompleted += wc_DownloadFileCompleted4;
-            }
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Process.Start(new ProcessStartInfo(Directory.GetCurrentDirectory() + @"\SpamtonSim\SpamtonSexSimulator.exe"));
-        }
-
         private void wc_DownloadFileCompleted1(object? sender, AsyncCompletedEventArgs e)
         {
             ZipFile.ExtractToDirectory("JevilSim.zip", Directory.GetCurrentDirectory(), true);
@@ -71,18 +47,8 @@ namespace JevilSim
         }
         private void wc_DownloadFileCompleted2(object? sender, AsyncCompletedEventArgs e)
         {
-            ZipFile.ExtractToDirectory("DELTARUNE.zip", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), true);
+            ZipFile.ExtractToDirectory("JevilSimulator.zip", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), true);
         }
-        private void wc_DownloadFileCompleted3(object? sender, AsyncCompletedEventArgs e)
-        {
-            ZipFile.ExtractToDirectory("SpamtonSim.zip", Directory.GetCurrentDirectory(), true);
-            button4.Enabled = true;
-        }
-        private void wc_DownloadFileCompleted4(object? sender, AsyncCompletedEventArgs e)
-        {
-            ZipFile.ExtractToDirectory("SpamtonSexSimulator.zip", Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), true);
-        }
-
         void wc_DownloadProgressChanged1(object sender, DownloadProgressChangedEventArgs e)
         {
             progressBar1.Value = e.ProgressPercentage;
@@ -92,16 +58,6 @@ namespace JevilSim
         {
             progressBar2.Value = e.ProgressPercentage;
             dlpercentage2.Text = e.ProgressPercentage.ToString() + "%";
-        }
-        void wc_DownloadProgressChanged3(object sender, DownloadProgressChangedEventArgs e)
-        {
-            progressBar3.Value = e.ProgressPercentage;
-            dlpercentage3.Text = e.ProgressPercentage.ToString() + "%";
-        }
-        void wc_DownloadProgressChanged4(object sender, DownloadProgressChangedEventArgs e)
-        {
-            progressBar4.Value = e.ProgressPercentage;
-            dlpercentage4.Text = e.ProgressPercentage.ToString() + "%";
         }
     }
 }
