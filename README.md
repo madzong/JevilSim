@@ -19,7 +19,7 @@ Simulators for the Jevil and Spamton NEO bosses from DELTARUNE. This repository 
  1. Download the files from the [Game files](https://github.com/Akanussus/JevilSim#game-files) section.
  2. Unzip all
  3. Put the JevilSimulator folder in %localappdata%
-   3.1. (Optional) Put the WASD controls file (keyconfig_0.ini) in %localappdata%\JevilSimulator
+ 4. (Optional) Put the WASD controls file (keyconfig_0.ini) in %localappdata%\JevilSimulator
 ## Game files
  * [Game](https://www.dropbox.com/s/9fo502w8usgp7ll/JevilSim.zip?dl=1)
  * [Save](https://www.dropbox.com/s/oy2ioucaz0apowp/JevilSimulator.zip?dl=1)
