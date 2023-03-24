@@ -16,7 +16,7 @@ Simulators for the Jevil and Spamton NEO bosses from DELTARUNE. This repository 
  * .NET 6.0
  * Windows 7+
 ## Manual installation (without launcher)
- 1. Download the files from the [Game files](https://github.com/Akanussus/JevilSim#game-files) section.
+ 1. Download the Game and Save files from the [Game files](https://github.com/Akanussus/JevilSim#game-files) section.
  2. Unzip all
  3. Put the JevilSimulator folder in %localappdata%
  4. (Optional) Put the WASD controls file (keyconfig_0.ini) in %localappdata%\JevilSimulator
